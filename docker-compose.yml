@@ -1,0 +1,14 @@
+version: '3.2'
+
+services:
+  postgres:
+    image: postgres
+    container_name: edburguer_jdbc
+    ports:
+      - 5432:5432
+    restart: always
+    environment:
+      POSTGRES_ROOT_PASSWORD: senha123
+      POSTGRES_DATABASE: POSTGRES
+      POSTGRES_USER: ed
+      POSTGRES_PASSWORD: senha123
